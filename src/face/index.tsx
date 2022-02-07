@@ -21,7 +21,7 @@ export default function face(props: { color: string }) {
       >
       <G clipPath="url(#clip0)">
         <Path d="M154 319.5C139.6 299.5 128.333 260.834 127 241.5L58.5 212L30 319.5H154Z" fill={color} stroke="black" strokeWidth="4" />
-        <Mask id={maskId} mask-type="alpha" maskUnits={EMaskUnits.USER_SPACE_ON_USE} x="30" y="212" width="124" height="118">
+        <Mask id={maskId} mask-type="alpha" maskUnits={'useSpaceOnUse' as EMaskUnits.USER_SPACE_ON_USE} x="30" y="212" width="124" height="118">
           <Path d="M154 329.5C139.6 309.5 128.333 260.834 127 241.5L58.5 212L30 329.5H154Z" fill={color} />
         </Mask>
         <G mask={`url(#${maskId})`}>
