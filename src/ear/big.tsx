@@ -5,7 +5,7 @@ import { Svg, Path } from 'react-native-svg';
 export default function earBig(props: { color: string }): any {
   const { color } = props;
   return (
-    <View>
+    <View
       style={{
         position: "absolute",
         width: "16%",
@@ -13,6 +13,7 @@ export default function earBig(props: { color: string }): any {
         top: "13%",
         left: "19%"
       }}
+      >
       <Svg
       width="48"
       height="52"
