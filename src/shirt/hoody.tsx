@@ -13,8 +13,6 @@ export default function shirtHoody(props: { color: string, lightColor: string })
       height: "26%"
     }}>
     <Svg
-      width="281"
-      height="93"
       viewBox="0 0 281 93"
       fill="none"
       >

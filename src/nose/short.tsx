@@ -13,8 +13,6 @@ export default function noseShort(): any {
       left: "46%"
     }}>
     <Svg
-      width="32"
-      height="40"
       viewBox="0 0 32 40"
       fill="none"
       >

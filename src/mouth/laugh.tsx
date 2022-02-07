@@ -15,8 +15,6 @@ export default function mouthLaugh (): any {
       right: "23%"
     }}>
     <Svg
-      width="73"
-      height="64"
       viewBox="0 0 73 64"
       fill="none"
       >

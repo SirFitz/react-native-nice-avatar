@@ -17,8 +17,6 @@ export default function hairMohawk(props: { color: string, colorRandom: boolean 
       left: "-1.8%"
     }}>
     <Svg
-      width="240"
-      height="203"
       viewBox="0 0 240 203"
       fill="none"
       >

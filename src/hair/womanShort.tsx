@@ -14,8 +14,6 @@ export default function hairWomanShort(props: { color: string }): any {
       left: "-0.8%"
     }}>
     <Svg
-      width="261"
-      height="240"
       viewBox="0 0 261 240"
       fill="none"
       >

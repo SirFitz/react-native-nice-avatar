@@ -13,8 +13,6 @@ export default function glassesRound(): any {
       left: "-3%"
     }}>
     <Svg
-      width="152"
-      height="65"
       viewBox="0 0 152 65"
       fill="none"
       >

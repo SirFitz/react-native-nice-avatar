@@ -14,8 +14,6 @@ export default function hatBeanie(props: { color: string }): any {
       left: "22%"
     }}>
     <Svg
-      width="640px"
-      height="508px"
       viewBox="0 0 640 508"
       preserveAspectRatio="xMidYMid meet">
       <Defs />

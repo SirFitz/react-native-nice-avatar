@@ -12,8 +12,6 @@ export default function eyesCircle(): any {
       top: "7%"
     }}>
     <Svg
-      width="96"
-      height="48"
       viewBox="0 0 96 48"
       fill="none"
       >

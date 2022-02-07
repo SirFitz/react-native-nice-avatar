@@ -13,8 +13,6 @@ export default function mouthSmile(): any {
       right: "23%"
     }}>
     <Svg
-      width="64"
-      height="64"
       viewBox="0 0 64 64"
       fill="none"
       >

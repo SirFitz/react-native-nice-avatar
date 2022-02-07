@@ -14,8 +14,6 @@ export default function earSmall(props: { color: string }): any {
         left: "19.8%"
       }}>
       <Svg
-        width="48"
-        height="48"
         viewBox="0 0 48 48"
         fill="none"
         >

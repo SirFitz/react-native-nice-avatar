@@ -13,8 +13,6 @@ export default function hairThick(props: { color: string, colorRandom: boolean }
       height: "64%"
     }}>
     <Svg
-      width="240"
-      height="200"
       viewBox="0 0 240 200"
       fill="none"
       >

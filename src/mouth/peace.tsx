@@ -13,8 +13,6 @@ export default function mouthPeace(): any {
       right: "23%"
     }}>
     <Svg
-      width="67"
-      height="64"
       viewBox="0 0 67 64"
       fill="none"
       >

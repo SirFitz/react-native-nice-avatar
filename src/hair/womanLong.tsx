@@ -13,8 +13,6 @@ export default function hairWomanLong(props: { color: string }): any {
       height: "100%"
     }}>
     <Svg
-      width="306"
-      height="331"
       viewBox="0 0 306 331"
       fill="none"
       >

@@ -14,8 +14,6 @@ export default function face(props: { color: string }) {
       position: "absolute"
     }}>
     <Svg
-      width="200"
-      height="320"
       viewBox="0 0 200 320"
       fill="none"
       >

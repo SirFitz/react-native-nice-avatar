@@ -14,8 +14,6 @@ export default function shirtPolo(props: { color: string, lightColor: string }):
       left: "-0.2%"
     }}>
     <Svg
-      width="281"
-      height="93"
       viewBox="0 0 281 93"
       fill="none"
       >

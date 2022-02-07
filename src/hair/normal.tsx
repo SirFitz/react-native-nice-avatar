@@ -14,8 +14,6 @@ export default function hairNormal(props: { color: string }): any {
       left: "-0.5%"
     }}>
     <Svg
-      width="240"
-      height="270"
       viewBox="0 0 240 270"
       fill="none"
       >

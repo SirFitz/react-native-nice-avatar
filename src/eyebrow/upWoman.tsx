@@ -12,8 +12,6 @@ export default function eyebrowUpWoman(): any {
       top: 0
     }}>
     <Svg
-      width="149"
-      height="51"
       viewBox="0 0 149 51"
       fill="none"
       >

@@ -15,8 +15,6 @@ export default function earBig(props: { color: string }): any {
       }}
       >
       <Svg
-      width="48"
-      height="52"
       viewBox="0 0 48 52"
       fill="none"
       >

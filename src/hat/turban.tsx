@@ -14,8 +14,6 @@ export default function hatTurban(props: { color: string }): any {
       height: "84%"
     }}>
     <Svg
-      width="240"
-      height="212"
       viewBox="0 0 240 212"
       fill="none"
       >
