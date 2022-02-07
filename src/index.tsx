@@ -21,6 +21,7 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
   static propTypes = {
     id: PropTypes.string,
     className: PropTypes.string,
+    size: PropTypes.number,
     style: PropTypes.object,
     shape: PropTypes.oneOf(["circle", "rounded", "square"]),
     sex: PropTypes.oneOf(defaultOptions.sex),
@@ -44,15 +45,14 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
   }
 
   render() {
-    const { id, className, style, shape = "circle", hairColorRandom = false } = this.props;
+    const { id, style, size = 200, shape = "circle", hairColorRandom = false } = this.props;
     const config = genConfig(this.props);
-    const height: number = parseInt(`${style?.height}`) || 200;
 
     // Background shape
     let borderRadius;
     switch (shape) {
       case "circle": {
-        borderRadius = height / 2;
+        borderRadius = size / 2;
         break;
       }
       case "rounded": {
@@ -67,13 +67,14 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
 
     return (
       <View
-        id={id}
-        className={className}
+        key={id}
         style={{
-          background: config.bgColor,
+          backgroundColor: config.bgColor,
           overflow: "hidden",
           borderRadius,
-          ...style
+          height: size,
+          width: size,
+          ...style,
         }}>
         <View
           style={{

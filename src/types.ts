@@ -44,7 +44,8 @@ export interface NiceAvatarProps extends AvatarConfig {
   id?: string,
   className?: string,
   style?: Style,
-  shape?: "circle" | "rounded" | "square"
+  shape?: "circle" | "rounded" | "square",
+  size?: number;
 }
 
 export type GenConfigFunc = (config?: AvatarFullConfig) => Required<AvatarFullConfig>
