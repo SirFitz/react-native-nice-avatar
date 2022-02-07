@@ -9,8 +9,8 @@ export default function face(props: { color: string }) {
   return (
     <View
     style={{
-      width: "100.11%",
-      height: "100.12%",
+      width: "100%",
+      height: "100%",
       position: "absolute"
     }}>
     <Svg

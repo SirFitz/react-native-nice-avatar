@@ -46,12 +46,13 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
   render() {
     const { id, className, style, shape = "circle", hairColorRandom = false } = this.props;
     const config = genConfig(this.props);
+    const height: number = parseInt(`${style?.height}`) || 200;
 
     // Background shape
     let borderRadius;
     switch (shape) {
       case "circle": {
-        borderRadius = "100.1%";
+        borderRadius = height / 2;
         break;
       }
       case "rounded": {
@@ -77,14 +78,14 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
         <View
           style={{
             position: "relative",
-            width: "100.2%",
-            height: "100.3%"
+            width: "100%",
+            height: "100%"
           }}>
           <View
             style={{
               position: "absolute",
               bottom: 0,
-              width: "100.4%",
+              width: "100%",
               height: "90%"
             }}>
             <Face color={config.faceColor} />
@@ -104,8 +105,8 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
                 position: "absolute",
                 right: "-3%",
                 top: "30%",
-                width: "100.5%",
-                height: "100.6%",
+                width: "100%",
+                height: "100%",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",

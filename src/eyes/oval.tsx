@@ -6,7 +6,7 @@ export default function eyesOval(): any {
   return (
     <View 
     style={{
-      width: "100.8%",
+      width: "100%",
       height: "12%",
       position: "absolute",
       top: "6%"

@@ -6,7 +6,7 @@ export default function glassesSquare(): any {
   return (
     <View 
     style={{
-      width: "100.14%",
+      width: "100%",
       height: "22%",
       position: "absolute",
       top: "0.5%",
