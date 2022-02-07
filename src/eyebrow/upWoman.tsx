@@ -1,7 +1,9 @@
-import React from "react";
+import * as React from 'react';
+import { SvgXml } from 'react-native-svg';
 
-export default function eyebrowUpWoman(): SVGElement {
-  return (
+export default function eyebrowUpWoman(): any {
+  const xml = ` 
+
     <svg
       style={{
         position: "absolute",
@@ -23,5 +25,6 @@ export default function eyebrowUpWoman(): SVGElement {
       <path d="M40.5994 23.2005L38.3984 15.3008" stroke="black" strokeWidth="4" strokeLinecap="round" />
       <path d="M106.436 9.89973L108.637 2" stroke="black" strokeWidth="4" strokeLinecap="round" />
     </svg>
-  );
+   `;
+  return ( <SvgXml xml={xml} width="100%" height="100%" /> );
 }

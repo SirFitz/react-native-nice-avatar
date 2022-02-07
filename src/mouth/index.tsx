@@ -1,10 +1,11 @@
-import React from "react";
+import * as React from 'react';
+import { SvgXml } from 'react-native-svg';
 
 import Laugh from "./laugh";
 import Smile from "./smile";
 import Peace from "./peace";
 
-export default function mouth (props: { style: string }): SVGElement {
+export default function mouth (props: { style: string }): any {
   const { style } = props;
   switch (style) {
     case "laugh": return <Laugh />;

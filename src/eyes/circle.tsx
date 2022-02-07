@@ -1,7 +1,9 @@
-import React from "react";
+import * as React from 'react';
+import { SvgXml } from 'react-native-svg';
 
-export default function eyesCircle(): SVGElement {
-  return (
+export default function eyesCircle(): any {
+  const xml = ` 
+
     <svg
       style={{
         width: "100%",
@@ -17,5 +19,6 @@ export default function eyesCircle(): SVGElement {
       <ellipse cx="16.1171" cy="28.9268" rx="9" ry="10" transform="rotate(-6.77646 16.1171 28.9268)" fill="black" />
       <ellipse cx="80.1486" cy="18.9231" rx="9" ry="10" transform="rotate(-6.27568 80.1486 18.9231)" fill="black" />
     </svg>
-  );
+   `;
+  return ( <SvgXml xml={xml} width="100%" height="100%" /> );
 }

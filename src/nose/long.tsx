@@ -1,7 +1,9 @@
-import React from "react";
+import * as React from 'react';
+import { SvgXml } from 'react-native-svg';
 
-export default function noseLong(): SVGElement {
-  return (
+export default function noseLong(): any {
+  const xml = ` 
+
     <svg
       style={{
         width: "10%",
@@ -18,5 +20,6 @@ export default function noseLong(): SVGElement {
       <path d="M16.5 3C16.5 17 23.5 28 23.5 28C23.5 28 20 34 10 32" stroke="#171921" strokeWidth="4" />
     </svg>
 
-  );
+   `;
+  return ( <SvgXml xml={xml} width="100%" height="100%" /> );
 }

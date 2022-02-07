@@ -1,7 +1,9 @@
-import React from "react";
+import * as React from 'react';
+import { SvgXml } from 'react-native-svg';
 
-export default function mouthPeace(): SVGElement {
-  return (
+export default function mouthPeace(): any {
+  const xml = ` 
+
     <svg
       style={{
         width: "50%",
@@ -18,5 +20,6 @@ export default function mouthPeace(): SVGElement {
       <path d="M2.5 17.5C5 34.5 33.5 42.5 59.5 23" stroke="black" strokeWidth="4" />
     </svg>
 
-  );
+   `;
+  return ( <SvgXml xml={xml} width="100%" height="100%" /> );
 }

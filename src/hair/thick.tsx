@@ -1,8 +1,10 @@
-import React from "react";
+import * as React from 'react';
+import { SvgXml } from 'react-native-svg';
 
-export default function hairThick(props: { color: string, colorRandom: boolean }): SVGElement {
+export default function hairThick(props: { color: string, colorRandom: boolean }): any {
   const { color, colorRandom } = props;
-  return (
+  const xml = ` 
+
     <svg
       style={{
         position: "absolute",
@@ -22,5 +24,6 @@ export default function hairThick(props: { color: string, colorRandom: boolean }
       <path d="M10 84.4996C21.6 77.6996 32.8333 79.9996 37 81.9996L32.5 97.5C31.3 89.1 17 85.3331 10 84.4996Z" fill={colorRandom && color || "black"} />
     </svg>
 
-  );
+   `;
+  return ( <SvgXml xml={xml} width="100%" height="100%" /> );
 }

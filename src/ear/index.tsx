@@ -2,10 +2,12 @@ import React, { Fragment } from "react";
 
 import EarSmall from "./small";
 import EarBig from "./big";
+import { SvgXml } from 'react-native-svg';
 
-export default function ear(props: { color: string, size: string }): SVGElement {
+export default function ear(props: { color: string, size: string }): any {
   const { color, size } = props;
-  return (
+  const xml = ` 
+
     <Fragment>
       {size === "small" &&
         <EarSmall color={color} />
@@ -15,5 +17,6 @@ export default function ear(props: { color: string, size: string }): SVGElement 
       }
     </Fragment>
 
-  );
+   `;
+  return ( <SvgXml xml={xml} width="100%" height="100%" /> );
 }

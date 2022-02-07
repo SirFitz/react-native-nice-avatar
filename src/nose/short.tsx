@@ -1,7 +1,9 @@
-import React from "react";
+import * as React from 'react';
+import { SvgXml } from 'react-native-svg';
 
-export default function noseShort(): SVGElement {
-  return (
+export default function noseShort(): any {
+  const xml = ` 
+
     <svg
       style={{
         width: "10%",
@@ -18,5 +20,6 @@ export default function noseShort(): SVGElement {
       <path d="M16.5 7C16.1667 10.8333 16.5 19.2 20.5 22C25.5 25.5 20 34 10 32" stroke="#171921" strokeWidth="4" />
     </svg>
 
-  );
+   `;
+  return ( <SvgXml xml={xml} width="100%" height="100%" /> );
 }

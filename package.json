@@ -17,7 +17,9 @@
   },
   "dependencies": {
     "chroma-js": "^2.1.2",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "react-native": "^0.67.2",
+    "react-native-svg": "^12.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",

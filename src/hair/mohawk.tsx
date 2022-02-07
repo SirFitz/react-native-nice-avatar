@@ -1,11 +1,13 @@
-import React from "react";
+import * as React from 'react';
+import { SvgXml } from 'react-native-svg';
 import chroma from "chroma-js";
 
-export default function hairMohawk(props: { color: string, colorRandom: boolean }): SVGElement {
+export default function hairMohawk(props: { color: string, colorRandom: boolean }): any {
   const { color, colorRandom } = props;
   const mainColor = colorRandom && color || "#171921";
   const subColor = colorRandom && chroma(color).brighten(2) || "#717376";
-  return (
+  const xml = ` 
+
     <svg
       style={{
         position: "absolute",
@@ -25,5 +27,6 @@ export default function hairMohawk(props: { color: string, colorRandom: boolean 
       <path opacity="0.35" d="M67.4855 133.675C60.2855 106.475 89.4855 91.8415 102.985 87.6749C95.9855 71.3415 79.9854 56.6749 60.4854 74.6756C42.4854 105.175 49.4855 128.676 54.9855 146.675L67.4855 133.675Z" fill={subColor} stroke={subColor} strokeWidth="1" />
     </svg>
 
-  );
+   `;
+  return ( <SvgXml xml={xml} width="100%" height="100%" /> );
 }

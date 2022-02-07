@@ -1,8 +1,10 @@
-import React from "react";
+import * as React from 'react';
+import { SvgXml } from 'react-native-svg';
 
-export default function mouthLaugh (): SVGElement {
+export default function mouthLaugh (): any {
   const id = `mouth${Math.round(Math.random() * 9999999)}`;
-  return (
+  const xml = ` 
+
     <svg
       style={{
         width: "50%",
@@ -25,5 +27,6 @@ export default function mouthLaugh (): SVGElement {
       </g>
     </svg>
 
-  );
+   `;
+  return ( <SvgXml xml={xml} width="100%" height="100%" /> );
 }

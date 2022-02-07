@@ -1,7 +1,9 @@
-import React from "react";
+import * as React from 'react';
+import { SvgXml } from 'react-native-svg';
 
-export default function glassesSquare(): SVGElement {
-  return (
+export default function glassesSquare(): any {
+  const xml = ` 
+
     <svg
       style={{
         width: "100%",
@@ -20,5 +22,6 @@ export default function glassesSquare(): SVGElement {
       <path d="M154.751 8.96388C154.634 5.39915 151.451 2.7232 147.919 3.21958L109.203 8.66085C105.921 9.12202 103.635 12.156 104.096 15.4375L109.663 55.0482C110.124 58.3297 113.158 60.616 116.44 60.1548L150.912 55.31C153.949 54.8832 156.175 52.2357 156.074 49.1711L154.751 8.96388Z" stroke="black" strokeWidth="4" />
       <path d="M85.5 37.125L107.5 33.625" stroke="black" strokeWidth="4" />
     </svg>
-  );
+   `;
+  return ( <SvgXml xml={xml} width="100%" height="100%" /> );
 }
