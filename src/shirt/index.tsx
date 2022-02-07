@@ -8,8 +8,7 @@ import Polo from "./polo";
 
 export default function shirt (props: { color: string, style: string }): any {
   const { style, color } = props;
-  const secondColor = chroma(color).brighten(1).hex( `;
-  return ( <SvgXml xml={xml} width="100%" height="100%" /> );
+  const secondColor = chroma(color).brighten(1).hex();
   switch (style) {
     case "hoody": return <Hoody color={color} lightColor={secondColor} />;
     case "polo": return <Polo color={color} lightColor={secondColor} />;
