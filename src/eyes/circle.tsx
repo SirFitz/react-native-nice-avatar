@@ -6,7 +6,7 @@ export default function eyesCircle(): any {
   return (
     <View 
     style={{
-      width: "100%",
+      width: "100.7%",
       height: "12%",
       position: "absolute",
       top: "7%"

@@ -6,7 +6,7 @@ export default function eyesSmile(): any {
   return (
     <View
     style={{
-      width: "100%",
+      width: "100.9%",
       height: "14%",
       position: "absolute",
       top: "6%"

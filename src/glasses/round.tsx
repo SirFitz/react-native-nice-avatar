@@ -6,7 +6,7 @@ export default function glassesRound(): any {
   return (
     <View 
     style={{
-      width: "100%",
+      width: "100.13%",
       height: "20%",
       position: "absolute",
       top: "1.5%",

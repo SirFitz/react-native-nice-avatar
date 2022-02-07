@@ -9,7 +9,7 @@ export default function shirtShort(props: { color: string }): any {
     style={{
       position: "absolute",
       bottom: "-2.5%",
-      width: "100%",
+      width: "100.16%",
       height: "26%"
     }}>
     <Svg

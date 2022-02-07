@@ -51,7 +51,7 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
     let borderRadius;
     switch (shape) {
       case "circle": {
-        borderRadius = "100%";
+        borderRadius = "100.1%";
         break;
       }
       case "rounded": {
@@ -77,14 +77,14 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
         <View
           style={{
             position: "relative",
-            width: "100%",
-            height: "100%"
+            width: "100.2%",
+            height: "100.3%"
           }}>
           <View
             style={{
               position: "absolute",
               bottom: 0,
-              width: "100%",
+              width: "100.4%",
               height: "90%"
             }}>
             <Face color={config.faceColor} />
@@ -104,8 +104,8 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
                 position: "absolute",
                 right: "-3%",
                 top: "30%",
-                width: "100%",
-                height: "100%",
+                width: "100.5%",
+                height: "100.6%",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
