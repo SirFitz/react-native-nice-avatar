@@ -1,10 +1,11 @@
 import React from "react";
+import { View } from 'react-native';
 
 import Circle from "./circle";
 import Oval from "./oval";
 import Smile from "./smile";
 
-export default function eyes(props: { style: string }): SVGElement {
+export default function eyes(props: { style: string }): any {
   const { style } = props;
   switch (style) {
     case "circle": return <Circle />;

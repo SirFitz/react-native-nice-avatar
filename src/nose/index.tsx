@@ -1,10 +1,11 @@
 import React from "react";
+import { View } from 'react-native';
 
 import Long from "./long";
 import Short from "./short";
 import Round from "./round";
 
-export default function nose (props: { style: string }): SVGElement {
+export default function nose (props: { style: string }): any {
   const { style } = props;
   switch (style) {
     case "long": return <Long />;
