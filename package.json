@@ -2,7 +2,7 @@
   "name": "react-native-nice-avatar",
   "version": "1.2.4",
   "description": "react native library for generating avatar",
-  "main": "src/index.js",
+  "main": "src/index.tsx",
   "types": "src/types.ts",
   "scripts": {},
   "keywords": [
