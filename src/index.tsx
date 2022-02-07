@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { View } from 'react-native';
 import PropTypes from "prop-types";
 
 import type { NiceAvatarProps } from "./types"
@@ -64,7 +65,7 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
     }
 
     return (
-      <div
+      <View
         id={id}
         className={className}
         style={{
@@ -73,13 +74,13 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
           borderRadius,
           ...style
         }}>
-        <div
+        <View
           style={{
             position: "relative",
             width: "100%",
             height: "100%"
           }}>
-          <div
+          <View
             style={{
               position: "absolute",
               bottom: 0,
@@ -98,7 +99,7 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
             }
 
             {/* Face detail */}
-            <div
+            <View
               style={{
                 position: "absolute",
                 right: "-3%",
@@ -116,12 +117,12 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
               <Ear color={config.faceColor} size={config.earSize} />
               <Nose style={config.noseStyle} />
               <Mouth style={config.mouthStyle} />
-            </div>
+            </View>
 
             <Shirt color={config.shirtColor} style={config.shirtStyle} />
-          </div>
-        </div>
-      </div>
+          </View>
+        </View>
+      </View>
     );
   }
 }
