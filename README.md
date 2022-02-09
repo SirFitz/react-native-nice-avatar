@@ -17,7 +17,7 @@
 
 ## Credits 
 
-- This is a port of React Native Nice Avatar from [@dapilab](https://github.com/dapilab/react-nice-avatar)
+- This is a port of React Nice Avatar from [@dapilab](https://github.com/dapilab/react-nice-avatar)
 
 ## Online editor / preview
 
