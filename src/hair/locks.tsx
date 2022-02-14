@@ -8,9 +8,10 @@ export default function hairLocks(props: { color: string }): any {
     <View
     style={{
       position: "absolute",
-      bottom: "-2.2%",
-      width: "97%",
-      height: "100%"
+      bottom: "20%",
+      width: "94%",
+      height: "81%",
+      left: "-0.5%"
     }}>
     <Svg
           viewBox="0 0 274 256"
