@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View } from 'react-native';
 import PropTypes from "prop-types";
-
+import LinearGradient from 'react-native-linear-gradient';
 import type { NiceAvatarProps } from "./types"
 
 import { genConfig, defaultOptions } from "./utils";
@@ -16,6 +16,7 @@ import Glasses from "./glasses";
 import Nose from "./nose";
 import Mouth from "./mouth";
 import Shirt from "./shirt";
+import Background from "./background";
 
 export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
   static propTypes = {
@@ -64,12 +65,10 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
         break;
       }
     }
-
     return (
-      <View
-        key={id}
+      <Background
+        bgColor={config.bgColor}
         style={{
-          backgroundColor: config.bgColor,
           overflow: "hidden",
           borderRadius,
           height: size,
@@ -124,7 +123,7 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
             <Shirt color={config.shirtColor} style={config.shirtStyle} />
           </View>
         </View>
-      </View>
+      </Backrgound>
     );
   }
 }
