@@ -123,7 +123,7 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
             <Shirt color={config.shirtColor} style={config.shirtStyle} />
           </View>
         </View>
-      </Backrgound>
+      </Background>
     );
   }
 }
