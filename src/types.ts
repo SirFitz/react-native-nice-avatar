@@ -3,8 +3,9 @@ import * as React from 'react';
 type Style = {
   [key: string]: string | number | boolean
 }
+export const SexArray = ['man', 'woman'] as const;
 
-export type Sex = 'man' | 'woman'
+export type Sex = typeof SexArray[number]
 export type EarSize = 'small' | 'big'
 export type HairStyle = 'normal' | 'thick' | 'mohawk' | 'womanLong' | 'locks' | 'womanShort'
 export type HairStyleMan = 'normal' | 'thick' | 'mohawk' | 'locks' 
