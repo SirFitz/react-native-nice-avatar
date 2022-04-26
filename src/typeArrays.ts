@@ -1,0 +1,13 @@
+export const SexArray = ['man', 'woman'] as const;
+export const EarSizeArray = ['small' , 'big'] as const;
+export const HairStyleArray = ['none', 'normal' , 'thick' , 'mohawk' , 'womanLong' , 'womanShort', 'afroLong', 'afroPart', 'afro', 'afroLow', 'lowCut', 'tappered'] as const;
+export const HairStyleManArray = ['normal' , 'thick' , 'mohawk', 'afro', 'afroLow', 'lowCut', 'tappered'] as const;
+export const HairStyleWomanArray = ['normal' , 'womanLong' , 'womanShort', 'afroLong', 'afroPart'] as const;
+export const HatStyleArray = ['none', 'beanie' ,'turban' , 'cap'] as const;
+export const EyeStyleArray = ['circle' , 'oval' , 'smile'] as const;
+export const GlassesStyleArray = ['none', 'round' , 'square' , 'catEyes', 'rayband', 'roundCool', 'roundDash'] as const;
+export const NoseStyleArray = ['short' , 'long' , 'round'] as const;
+export const MouthStyleArray = ['laugh' , 'smile' , 'peace', 'mask', 'tongue'] as const;
+export const ShirtStyleArray = ['hoody' , 'short' , 'polo', 'closedVest', 'openVest', 'jumper', 'striped', 'stripedLarge'] as const;
+export const EyeBrowStyleArray = ['up' , 'upWoman'] as const;
+export const ShapeArray = ['circle', 'rounded' , 'square'] as const;
