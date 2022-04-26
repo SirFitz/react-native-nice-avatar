@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import PropTypes from "prop-types";
 import LinearGradient from 'react-native-linear-gradient';
 import type { NiceAvatarProps } from "./types"
-import { ShapeArray } from './typeArrays'
+import { ShapeArray } from './types/arrays'
 import { genConfig, defaultOptions } from "./utils";
 
 import Face from "./face";

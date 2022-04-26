@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {  SexArray, EarSizeArray, HairStyleArray, HairStyleManArray, HairStyleWomanArray,  HatStyleArray,  EyeStyleArray, GlassesStyleArray,
-  NoseStyleArray, MouthStyleArray, ShirtStyleArray, EyeBrowStyleArray, ShapeArray} from './typeArrays';
+  NoseStyleArray, MouthStyleArray, ShirtStyleArray, EyeBrowStyleArray, ShapeArray} from './types/arrays';
 
 type Style = {
   [key: string]: string | number | boolean
