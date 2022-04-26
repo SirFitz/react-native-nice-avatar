@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import PropTypes from "prop-types";
 import LinearGradient from 'react-native-linear-gradient';
 import type { NiceAvatarProps } from "./types"
-import { ShapeArray } from './typeArrays'
+
 import { genConfig, defaultOptions } from "./utils";
 
 import Face from "./face";
@@ -24,7 +24,7 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
     className: PropTypes.string,
     size: PropTypes.number,
     style: PropTypes.object,
-    shape: PropTypes.oneOf(ShapeArray),
+    shape: PropTypes.oneOf(["circle", "rounded", "square"]),
     sex: PropTypes.oneOf(defaultOptions.sex),
     faceColor: PropTypes.string,
     earSize: PropTypes.oneOf(defaultOptions.earSize),

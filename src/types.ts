@@ -1,23 +1,21 @@
 import * as React from 'react';
-import {  SexArray, EarSizeArray, HairStyleArray, HairStyleManArray, HairStyleWomanArray,  HatStyleArray,  EyeStyleArray, GlassesStyleArray,
-  NoseStyleArray, MouthStyleArray, ShirtStyleArray, EyeBrowStyleArray, ShapeArray} from './typeArrays';
 
 type Style = {
   [key: string]: string | number | boolean
 }
 
-export type Sex = typeof SexArray[number]
-export type EarSize =  typeof EarSizeArray[number]
-export type HairStyle =  typeof HairStyleArray[number]
-export type HairStyleMan = typeof HairStyleManArray[number]
-export type HairStyleWoman = typeof HairStyleWomanArray[number]
-export type HatStyle =  typeof HatStyleArray[number]
-export type EyeStyle =  typeof EyeStyleArray[number]
-export type GlassesStyle = typeof GlassesStyleArray[number]
-export type NoseStyle =  typeof NoseStyleArray[number]
-export type MouthStyle =  typeof MouthStyleArray[number]
-export type ShirtStyle =  typeof ShirtStyleArray[number]
-export type EyeBrowStyle = typeof EyeBrowStyleArray[number]
+export type Sex = 'man' | 'woman'
+export type EarSize = 'small' | 'big'
+export type HairStyle = 'normal' | 'thick' | 'mohawk' | 'womanLong' | 'locks' | 'womanShort'
+export type HairStyleMan = 'normal' | 'thick' | 'mohawk' | 'locks' 
+export type HairStyleWoman = 'normal' | 'womanLong' | 'womanShort' | 'locks' 
+export type HatStyle = 'beanie' |'turban' | 'none'
+export type EyeStyle = 'circle' | 'oval' | 'smile'
+export type GlassesStyle = 'round' | 'square' | 'none'
+export type NoseStyle = 'short' | 'long' | 'round'
+export type MouthStyle = 'laugh' | 'smile' | 'peace'
+export type ShirtStyle = 'hoody' | 'short' | 'polo'
+export type EyeBrowStyle = 'up' | 'upWoman'
 
 export interface AvatarConfig {
   sex?: Sex,
@@ -46,7 +44,7 @@ export interface NiceAvatarProps extends AvatarConfig {
   id?: string,
   className?: string,
   style?: Style,
-  shape?: typeof ShapeArray,
+  shape?: "circle" | "rounded" | "square",
   size?: number;
 }
 
