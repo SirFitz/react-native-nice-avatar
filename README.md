@@ -1,4 +1,4 @@
-# react-nice-avatar
+# react-native-nice-avatar
 
 [![Version](http://img.shields.io/npm/v/react-nice-avatar.svg)](https://www.npmjs.org/package/react-nice-avatar)
 [![npm download][download-image]][download-url]
@@ -14,6 +14,10 @@
              width="600" alt="imagewall" />
     </a>
 </div>
+
+## Credits 
+
+- This is a port of React Nice Avatar from [@dapilab](https://github.com/dapilab/react-nice-avatar)
 
 ## Online editor / preview
 
