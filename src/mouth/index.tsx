@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from 'react-native';
 
-import Laugh from "./laugh";
+import Laugh from "./tongue";
 import Smile from "./smile";
 import Peace from "./peace";
 

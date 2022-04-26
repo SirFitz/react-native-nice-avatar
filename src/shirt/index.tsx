@@ -4,7 +4,7 @@ import chroma from "chroma-js";
 
 import Hoody from "./hoody";
 import Short from "./short";
-import Polo from "./polo";
+import Polo from "./jumper";
 
 export default function shirt (props: { color: string, style: string }): any {
   const { style, color } = props;

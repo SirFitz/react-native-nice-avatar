@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from 'react-native';
 
-import Round from "./round";
+import Round from "./roundCool";
 import Square from "./square";
 
 export default function glasses(props: { style: string }): any {

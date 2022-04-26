@@ -6,7 +6,7 @@ import Thick from "./thick";
 import Mohawk from "./mohawk";
 import WomanLong from "./womanLong";
 import WomanShort from "./womanShort";
-import Locks from "./locks";
+import Locks from "./lowCut";
 
 export default function hair(props: { style: string, color: string, colorRandom: boolean }): any {
   const { style, color, colorRandom } = props;
