@@ -10,24 +10,23 @@ export default function background (props: {
 
   const colors = props.bgColor.startsWith('linear-gradient') ? (
     props.bgColor.replace('linear-gradient:', '').split(',').map((c) => c.trim())) : [];
-  
+  const padding = props.style?.padding || 0;
+  delete props.style?.padding;
   return (
-    <Fragment>
-      {colors.length > 1 &&
+      colors.length > 1 ? (
+
         <View style={{...props.style}}>
           <LinearGradient 
+            style={{ padding }}
             colors={colors}>
             {props.children}
           </LinearGradient>
         </View>
-      }
-      {colors.length < 2 &&
+      ) : 
         <View 
           style={{...props.style, backgroundColor: props.bgColor}}>
           {props.children}
         </ View>
-      }
-    </Fragment>
 
   );
 }

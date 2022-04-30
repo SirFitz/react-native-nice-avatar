@@ -2,7 +2,7 @@ import React from "react";
 import { View } from 'react-native';
 import { Svg, Path, Mask, Rect, Circle, G } from 'react-native-svg';
 
-export default function hairLowAfro(props: { color: string }): any {
+export default function hairLowCut(props: { color: string }): any {
   const { color } = props;
   return (
     <View

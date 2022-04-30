@@ -2,7 +2,7 @@ import React from "react";
 import { View } from 'react-native';
 import { Svg, Path, Circle, Mask, G } from 'react-native-svg';
 
-export default function glassesRound(): any {
+export default function glassesCatEyes(): any {
   return (
     <View 
     style={{

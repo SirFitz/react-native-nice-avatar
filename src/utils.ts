@@ -13,6 +13,8 @@ import {
   ShirtStyle,
   EyeBrowStyle,
 } from "./types"
+import {  SexArray, EarSizeArray, HairStyleArray, HairStyleManArray, HairStyleWomanArray,  HatStyleArray,  EyeStyleArray, GlassesStyleArray,
+  NoseStyleArray, MouthStyleArray, ShirtStyleArray, EyeBrowStyleArray, ShapeArray} from './types/arrays';
 
 /**
  * Pick random one from the list
@@ -67,20 +69,20 @@ interface DefaultOptions {
   gradientBgColor: string[]
 }
 export const defaultOptions: DefaultOptions = {
-  sex: ["man", "woman"],
+  sex: [...SexArray],
   faceColor: ["#F9C9B6", "#AC6651"],
-  earSize: ["small", "big"],
+  earSize: [...EarSizeArray],
   hairColor: ["#000", "#fff", "#77311D", "#FC909F", "#D2EFF3", "#506AF4", "#F48150"],
-  hairStyleMan: ["normal", "thick", "mohawk", "locks"],
-  hairStyleWoman: ["normal", "womanLong", "locks", "womanShort"],
+  hairStyleMan: [...HairStyleManArray],
+  hairStyleWoman: [...HairStyleWomanArray],
   hatColor: ["#000", "#fff", "#77311D", "#FC909F", "#D2EFF3", "#506AF4", "#F48150"],
-  hatStyle: ["beanie", "turban", "none"],
-  eyeBrowWoman: ["up", "upWoman"],
-  eyeStyle: ["circle", "oval", "smile"],
-  glassesStyle: ["round", "square", "none"],
-  noseStyle: ["short", "long", "round"],
-  mouthStyle: ["laugh", "smile", "peace"],
-  shirtStyle: ["hoody", "short", "polo"],
+  hatStyle: [...HatStyleArray],
+  eyeBrowWoman: [...EyeBrowStyleArray],
+  eyeStyle: [...EyeStyleArray],
+  glassesStyle: [...GlassesStyleArray],
+  noseStyle: [...NoseStyleArray],
+  mouthStyle: [...MouthStyleArray],
+  shirtStyle: [...ShirtStyleArray],
   shirtColor: ["#9287FF", "#6BD9E9", "#FC909F", "#F4D150", "#77311D"],
   bgColor: ["#9287FF", "#6BD9E9", "#FC909F", "#F4D150", "#E0DDFF", "#D2EFF3", "#FFEDEF", "#FFEBA4", "#506AF4", "#F48150", "#74D153"],
   gradientBgColor: [
