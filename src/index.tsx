@@ -89,9 +89,15 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
               height: "90%"
             }}>
             <Face color={config.faceColor} />
-            <Hat
-              color={config.hatColor}
-              style={config.hatStyle} />
+            <View style={{
+                width: "100%",
+                height: "100%",
+                zIndex: 2
+             }}>
+              <Hat
+                color={config.hatColor}
+                style={config.hatStyle} />
+            </View>
             {config.hatStyle === "none" &&
               <Hair
                 color={config.hairColor}
@@ -110,7 +116,8 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                justifyContent: "center"
+                justifyContent: "center",
+                zIndex: 1
               }}>
               <Eyebrow style={config.eyeBrowStyle} />
               <Eye style={config.eyeStyle} />
