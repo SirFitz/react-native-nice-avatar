@@ -2,9 +2,9 @@ export const SexArray = ['man', 'woman'] as const;
 export const EarSizeArray = ['small' , 'big', 'bigRound'] as const;
 export const HairStyleArray = ['none', 'normal' , 'thick' , 'mohawk' , 'womanLong' , 'womanShort', 'afroPart', 'afroLow', 'lowCut', 'tappered'] as const;
 // 'afro', 'afroLong',
-export const HairStyleManArray = ['normal' , 'thick' , 'mohawk', 'afroLow', 'lowCut', 'tappered'] as const;
+export const HairStyleManArray = ['none', 'normal' , 'thick' , 'mohawk', 'afroLow', 'lowCut', 'tappered'] as const;
 //  'afro',
-export const HairStyleWomanArray = ['normal' , 'womanLong' , 'womanShort', 'afroPart'] as const;
+export const HairStyleWomanArray = ['none', 'normal' , 'womanLong' , 'womanShort', 'afroPart'] as const;
 // 'afroLong', 
 export const HatStyleArray = ['none', 'beanie' , 'cap', 'baseball', 'backCap'] as const;
 // ,'turban'
