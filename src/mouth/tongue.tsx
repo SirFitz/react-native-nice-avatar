@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from 'react-native';
-import { Svg, Path, Mask, G, Circle } from 'react-native-svg';
+import { Svg, Path, Mask, G, Circle, Ellipse } from 'react-native-svg';
 import { EMaskUnits } from "react-native-svg";
 
 export default function mouthTongue (): any {
@@ -12,13 +12,46 @@ export default function mouthTongue (): any {
       height: "87%",
       position: "absolute",
       top: "-11%",
-      right: "-13%"
+      right: "-23%"
     }}>
-    <Svg  viewBox="0 0 138 149" fill="none" >
-      <Path d="M77.5491 71.7635C80.0584 74.4105 79.054 78.36 77.5491 80.4986C74.7452 84.483 71.0923 84.3013 66.0106 81.8829C62.5835 80.2519 61.8245 78.6815 61.2685 77.1222C64.344 77.7129 62.5727 76.8989 68.0514 75.9599C71.9648 75.2894 72.1583 76.4225 74.4997 74.4105C76.1025 72.7931 76.882 74.5693 77.5491 71.7635Z" fill="#FC909F"/>
-      <Path d="M54.9577 73.4567C63.0649 78.8939 74.4302 78.0812 82.5099 67.5288" stroke="black" strokeWidth="2.11759" strokeLinecap="round" strokeLinejoin="round"/>
-    </Svg>
-
+ <Svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <Path
+      d="M19.143 29.117c5.738-1.039 9.099-7.378 7.93-13.838-1.17-6.459-6.54-11.218-12.276-10.18-5.737 1.038-9.098 7.378-7.93 13.837 1.17 6.46 6.54 11.22 12.276 10.18Z"
+      fill="#000"
+      stroke="#000"
+      strokeWidth={1.901}
+    />
+    <Mask
+      id="a"
+      style={{
+        maskType: "alpha",
+      }}
+      maskUnits="userSpaceOnUse"
+      x={7}
+      y={5}
+      width={20}
+      height={24}
+    >
+      <Ellipse
+        cx={16.97}
+        cy={17.108}
+        rx={9.316}
+        ry={11.253}
+        transform="rotate(-10.258 16.97 17.108)"
+        fill="#171921"
+      />
+    </Mask>
+    <G mask="url(#a)">
+      <Ellipse
+        cx={18.696}
+        cy={26.642}
+        rx={10.696}
+        ry={9.69}
+        transform="rotate(-10.258 18.696 26.642)"
+        fill="#FC909F"
+      />
+    </G>
+  </Svg>
     </View>
   );
 }

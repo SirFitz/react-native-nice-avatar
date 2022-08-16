@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {  SexArray, EarSizeArray, HairStyleArray, HairStyleManArray, HairStyleWomanArray,  HatStyleArray,  EyeStyleArray, GlassesStyleArray,
+import {  SexArray, EarSizeArray, EarRingStyleArray, HairStyleArray, HairStyleManArray, HairStyleWomanArray,  HatStyleArray,  EyeStyleArray, GlassesStyleArray,
   NoseStyleArray, MouthStyleArray, ShirtStyleArray, EyeBrowStyleArray, ShapeArray} from './types/arrays';
 
 type Style = {
@@ -8,6 +8,7 @@ type Style = {
 
 export type Sex = typeof SexArray[number]
 export type EarSize =  typeof EarSizeArray[number]
+export type EarRingStyle =  typeof EarRingStyleArray[number]
 export type HairStyle =  typeof HairStyleArray[number]
 export type HairStyleMan = typeof HairStyleManArray[number]
 export type HairStyleWoman = typeof HairStyleWomanArray[number]
@@ -24,6 +25,7 @@ export interface AvatarConfig {
   faceColor?: string,
   earSize?: EarSize,
   hairColor?: string,
+  earRingStyle?: string,
   hairStyle?: HairStyle,
   hairColorRandom?: boolean,
   hatColor?: string,

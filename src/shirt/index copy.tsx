@@ -13,8 +13,6 @@ import Jumper from "./jumper";
 import Tie from "./tie";
 import BowTie from "./bowTie";
 import Suit from "./suit";
-import SuitBowTie from "./suitBowTie";
-import SuitNoTie from "./suitNoTie";
 
 export default function shirt (props: { color: string, style: string }): any {
   const { style, color } = props;
@@ -32,8 +30,6 @@ export default function shirt (props: { color: string, style: string }): any {
     case "tie": return <Tie color={color} lightColor={secondColor}  darkColor={ThirdColor}/>;
     case "bowTie": return <BowTie color={color} lightColor={secondColor}  darkColor={ThirdColor}/>;
     case "suit": return <Suit color={color} lightColor={secondColor}  darkColor={ThirdColor}/>;
-    case "suitBowTie": return <SuitBowTie color={color} lightColor={secondColor}  darkColor={ThirdColor}/>;
-    case "suitNoTie": return <SuitNoTie color={color} lightColor={secondColor}  darkColor={ThirdColor}/>;
     case "short":
     default:
       return <Short color={color} />;
