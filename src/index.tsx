@@ -10,6 +10,7 @@ import Face from "./face";
 import Hair from "./hair";
 import Hat from "./hat";
 import Ear from "./ear";
+import EarRing from "./earRing";
 import Eyebrow from "./eyebrow";
 import Eye from "./eyes";
 import Glasses from "./glasses";
@@ -49,6 +50,7 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
     const { id, style, size = 200, shape = "circle", hairColorRandom = false } = this.props;
     const config = genConfig(this.props);
 
+    console.log('FIL CONF', config);
     // Background shape
     let borderRadius;
     switch (shape) {
@@ -123,6 +125,7 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
               <Eye style={config.eyeStyle} />
               <Glasses style={config.glassesStyle} />
               <Ear color={config.faceColor} size={config.earSize} />
+              <EarRing style={config.earRingStyle} />
               <Nose style={config.noseStyle} />
               <Mouth style={config.mouthStyle} />
             </View>

@@ -5,7 +5,11 @@ import Laugh from "./laugh";
 import Smile from "./smile";
 import Peace from "./peace";
 import Mask from "./mask";
-import Tongue from "./tongue";
+import Bare from "./bare";
+import Frown from "./frown";
+import Kmt from "./kmt";
+import Lol from "./lol";
+import WideFrown from "./wideFrown";
 
 export default function mouth (props: { style: string }): any {
   const { style } = props;
@@ -13,7 +17,11 @@ export default function mouth (props: { style: string }): any {
     case "laugh": return <Laugh />;
     case "smile": return <Smile />;
     case "mask": return <Mask />;
-    case "tongue": return <Tongue />;
+    case "tongue": return <Lol />;
+    case "kmt": return <Kmt />;
+    case "frown": return <Frown />;
+    case "bare": return <Bare />;
+    case "wideFrown": return <WideFrown />;
     case "peace":
     default:
       return <Peace />;
