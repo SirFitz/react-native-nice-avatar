@@ -1,7 +1,8 @@
 export const SexArray = ['man', 'woman'] as const;
 export const EarSizeArray = ['small' , 'big', 'bigRound'] as const;
 export const EarRingStyleArray = ['none', 'flower' , 'hoop', 'line', 'stud', 'tripleStud'] as const;
-export const HairStyleArray = ['none', 'normal' , 'thick' , 'mohawk' , 'womanLong' , 'womanShort', 'afroPart', 'afroLow', 'lowCut', 'tappered', 'bigPlaits', 'nuffLocks', 'puffyLong', 'afroTappered', 'headWrap'] as const;
+export const FacialHairStyleArray = ['none', 'fullBeard' , 'goatee', 'harveyStache', 'mustache', 'scruff'] as const;
+export const HairStyleArray = ['none', 'normal' , 'thick' , 'mohawk' , 'womanLong' , 'womanShort', 'afroPart', 'afroLow', 'lowCut', 'tappered', 'bigPlaits', 'nuffLocks', 'puffyLong', 'afroTappered', 'headWrap', 'frontLocks', 'fadedPlaits'] as const;
 // 'afro', 'afroLong',
 export const HairStyleManArray = ['none', 'normal' , 'thick' , 'mohawk', 'afroLow', 'lowCut', 'tappered', 'afroTappered'] as const;
 //  'afro',
