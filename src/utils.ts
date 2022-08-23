@@ -4,6 +4,7 @@ import {
   Sex,
   EarSize,
   EarRingStyle,
+  FacialHairStyle,
   HairStyleMan,
   HairStyleWoman,
   HatStyle,
@@ -14,7 +15,7 @@ import {
   ShirtStyle,
   EyeBrowStyle,
 } from "./types"
-import {  SexArray, EarSizeArray, EarRingStyleArray, HairStyleArray, HairStyleManArray, HairStyleWomanArray,  HatStyleArray,  EyeStyleArray, GlassesStyleArray,
+import {  SexArray, EarSizeArray, EarRingStyleArray, FacialHairStyleArray, HairStyleArray, HairStyleManArray, HairStyleWomanArray,  HatStyleArray,  EyeStyleArray, GlassesStyleArray,
   NoseStyleArray, MouthStyleArray, ShirtStyleArray, EyeBrowStyleArray, ShapeArray} from './types/arrays';
 
 /**
@@ -56,6 +57,7 @@ interface DefaultOptions {
   earSize: EarSize[],
   hairColor: string[],
   earRingStyle: EarRingStyle[],
+  facialHairStyle: FacialHairStyle[],
   hairStyleMan: HairStyleMan[],
   hairStyleWoman: HairStyleWoman[],
   hatColor: string[],
@@ -76,6 +78,7 @@ export const defaultOptions: DefaultOptions = {
   earSize: [...EarSizeArray],
   hairColor: ["#000", "#fff", "#77311D", "#FC909F", "#D2EFF3", "#506AF4", "#F48150"],
   earRingStyle: [...EarRingStyleArray],
+  facialHairStyle: [...FacialHairStyleArray],
   hairStyleMan: [...HairStyleManArray],
   hairStyleWoman: [...HairStyleWomanArray],
   hatColor: ["#000", "#fff", "#77311D", "#FC909F", "#D2EFF3", "#506AF4", "#F48150"],
@@ -109,7 +112,8 @@ export const genConfig: GenConfigFunc = (userConfig = {}) => {
   response.mouthStyle = userConfig.mouthStyle || pickRandomFromList(defaultOptions.mouthStyle);
   response.shirtStyle = userConfig.shirtStyle || pickRandomFromList(defaultOptions.shirtStyle);
   response.glassesStyle = userConfig.glassesStyle || pickRandomFromList(defaultOptions.glassesStyle, { usually: ["none"] });
-
+  response.facialHairStyle = userConfig.facialHairStyle || 'none' ;
+  
   // Hair
   let hairColorAvoidList: string[] = [];
   let hairColorUsually: string[] = [];

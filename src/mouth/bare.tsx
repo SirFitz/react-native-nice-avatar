@@ -9,7 +9,7 @@ export default function  mouthBare(): any {
       width: "40%",
       height: "10%",
       position: "absolute",
-      top: "27%",
+      top: "28%",
       right: "30%"
     }}>
   <Svg viewBox="0 0 43 19" fill="none" xmlns="http://www.w3.org/2000/svg">
